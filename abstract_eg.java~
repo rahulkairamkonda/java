@@ -1,0 +1,13 @@
+abstract class abstract_eg
+{
+    public abstract void display();
+    {
+      class exam extends abstract_eg
+      {
+          public void display()
+          {
+              System.out.println("cloud9");
+            }
+        }
+    }
+}

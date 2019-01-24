@@ -1,0 +1,11 @@
+import java.util.*;
+class BUFF1
+{
+    public static void main(String args[])
+    {
+        String S1="noon";
+        String S2=new String();
+        S2=S1.Reverse();
+        System.out.println(S1.equals(S2));
+    }
+}

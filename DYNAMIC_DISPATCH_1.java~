@@ -1,0 +1,59 @@
+import java.util.*;
+class student1 
+{
+    String sname;
+    int roll;
+    void getdata()
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter name and roll number:-");
+        try
+        {
+          sname=sc.next();
+          roll=sc.nextInt();
+        }
+        catch(Exception asfdwf)
+        {
+            System.out.println(asfdwf);
+        }
+    }
+}
+class college1 extends student1
+{
+    String cname;
+    int code;
+    void getdata()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter college name and code:-");
+        cname=sc.next();
+        code=sc.nextInt();
+    }
+    void display()
+    {
+        System.out.println("sname = "+sname);
+        System.out.println("rollno = "+roll);
+        System.out.println("cname = "+cname);
+        System.out.println("code = "+code);
+    }
+}
+public class DYNAMIC_DISPATCH_1
+{
+    public static void main(String arg[])
+    {
+        student1 s=new student1();
+        college1 c=new college1();
+        student1 B;
+        B=s;
+        B.getdata();
+        B=c;
+        //B.getdata();
+        B.display(); // this function won't work coz B has different address and display can be called using only c ka object;
+        
+    }
+}
+
+        
+        
+        

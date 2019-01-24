@@ -1,0 +1,28 @@
+class my extends Thread
+{
+    public void run()
+    {
+        System.out.println("MY thread");
+    }
+}
+class Test
+{
+    public static void main()
+    {
+        my t=new my();
+        t.start();
+    }
+}
+
+
+public class thread1
+{
+    public static void main()
+    {
+        my t=new my();
+        Thread T=new Thread(t);
+        T.start();
+    }
+}
+
+    

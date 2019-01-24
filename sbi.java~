@@ -1,0 +1,31 @@
+abstract class bank
+{
+   abstract void getroi();
+}
+public class sbi extends bank
+{
+    void getroi()
+    {
+        System.out.println("roi of sbi is= 8");
+    }
+}
+public class pnb extends bank
+{
+    void getroi()
+    {
+        System.out.println("roi of pnb is= 10");
+    }
+}
+public class TEST_abs
+{
+    public static void main(String args[])
+    {
+        bank b;
+        b=new sbi();
+        b.getroi();
+        b=new pnb();
+        b.getroi();
+    }
+}
+
+

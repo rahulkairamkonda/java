@@ -1,0 +1,29 @@
+import java.util.*;
+abstract class bank
+{
+    abstract int getroi();
+}
+class sbi extends bank
+{
+    int getroi()
+    {
+        return 7;
+    }
+}
+class pnb extends bank
+{
+    int getroi()
+    {
+        return 8;
+    }
+}
+public class TEST_ABSTRACT
+{
+    
+    bank b=new sbi();
+    System.out.println("sbi="+b.getroi());
+    bank b=new pnb();
+    System.out.println("pnb="+b.getroi());
+}
+
+    
